@@ -5,8 +5,6 @@
 
 A tiny [pi](https://github.com/badlogic/pi-mono) extension that prevents long-context Anthropic Claude models (Opus 4.6, Opus 4.7, Sonnet 4.6, and any future 1M-window variants) from crossing Anthropic's **200k standard-tier pricing boundary**, above which input and output tokens are billed at roughly 2× the normal rate.
 
-> Previously published as [`pi-opus-budget-guard`](https://www.npmjs.com/package/pi-opus-budget-guard). That name was too narrow ("opus" undersells it — this covers Sonnet 4.6 and every future 1M-window Claude) and collided with the unrelated [`pi-budget-guard`](https://www.npmjs.com/package/pi-budget-guard) (a dollar-spend enforcement tool).
-
 ## The problem
 
 Anthropic's long-context models have a 1,000,000-token window but price input and output at ~2× once a request crosses 200,000 input tokens. Pi's default auto-compaction trigger is:
