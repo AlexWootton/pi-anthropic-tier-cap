@@ -1,26 +1,27 @@
 {
-	"name": "pi-anthropic-tier-cap",
+	"name": "pi-context-cap",
 	"version": "0.1.0",
-	"description": "Caps contextWindow on long-context Anthropic Claude models so pi's auto-compaction fires before crossing the 200k standard-tier pricing boundary.",
+	"description": "Cap model context windows to trigger pi's auto-compaction earlier. Zero-config for Anthropic's 200k pricing tier; configurable for other models and use cases.",
 	"keywords": [
 		"pi-package",
 		"pi-extension",
+		"context-window",
+		"compaction",
 		"anthropic",
 		"claude",
 		"tier",
-		"context-window",
-		"compaction",
-		"cost-control"
+		"cost-control",
+		"pricing"
 	],
 	"license": "MIT",
 	"author": "Alex Wootton (https://github.com/AlexWootton)",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/AlexWootton/pi-anthropic-tier-cap.git"
+		"url": "git+https://github.com/AlexWootton/pi-context-cap.git"
 	},
-	"homepage": "https://github.com/AlexWootton/pi-anthropic-tier-cap#readme",
+	"homepage": "https://github.com/AlexWootton/pi-context-cap#readme",
 	"bugs": {
-		"url": "https://github.com/AlexWootton/pi-anthropic-tier-cap/issues"
+		"url": "https://github.com/AlexWootton/pi-context-cap/issues"
 	},
 	"pi": {
 		"extensions": ["./index.ts"]
